@@ -5,13 +5,15 @@ import Footer from '../Components/Footer'
 const Login = () => {
   return (
         <div>
-            <Navbar />
+            <div>
+                <Navbar />
+            </div>
             <div className='flex min-h-full flex-col justify-center px-12 py-12 lg:px-8'>
                 <div className='sm:mx-auto sm:w-full sm:max-w-sm'>
                     <h1 className='mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900'>Sign In</h1>
                 </div>
             </div>
-            <div className='mt-10 sm:mx-auto sm:w-full sm:max-w-sm'>
+            <div className='mx-auto max-w-sm'>
                 <form className='space-y-6' action="#" method='POST'>
                     <div>
                         <label for="email" className='block text-sm font-medium leading-6 text-gray-900'>Email Address</label>
@@ -40,6 +42,10 @@ const Login = () => {
                     <a href="#" class="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"> Sign-Up Now</a>
                 </p>
             </div>
+            <div className='w-full h-48'>
+                
+            </div>
+            <Footer />
         </div>
   )
 }

@@ -5,7 +5,7 @@ import Contact from './Components/Contact'
 import Hero from './Components/Hero'
 import Latest from './Components/Latest'
 import Newsletter from './Components/Newsletter'
-import Cards from './Components/Cards'
+import UpcomingEvents from './Components/UpcomingEvents'
 
 function App() {
 
@@ -16,7 +16,7 @@ function App() {
         <Hero />
         <Latest />
         <Newsletter />
-        <Cards />
+        <UpcomingEvents />
         <Contact />
         <Footer />
       </div>

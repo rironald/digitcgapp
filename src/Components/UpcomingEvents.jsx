@@ -3,7 +3,7 @@ import Agumon from '../assets/agumon_promo.jpg'
 import SpringBreak from '../assets/spring_break.jpg'
 import UltimateCup from '../assets/ultimate_cup.jpg'
 
-const Cards = () => {
+const UpcomingEvents = () => {
   return (
     <div className='w-full py-[2rem] px-4 bg-[#00408b] text-black'>
         <h1 className='w-full md:text-5xl sm:text-6xl text-4xl flex flex-col justify-center text-center italic font-bold text-white py-16'>Latest News</h1>
@@ -28,4 +28,4 @@ const Cards = () => {
   )
 }
 
-export default Cards
+export default UpcomingEvents

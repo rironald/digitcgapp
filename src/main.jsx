@@ -4,6 +4,7 @@ import App from './App.jsx'
 import './styles/tailwind.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Login from './Pages/Login.jsx'
+import CardDB from './Pages/CardDB.jsx'
 
 const router = createBrowserRouter([
   {
@@ -13,7 +14,11 @@ const router = createBrowserRouter([
   {
     path: '/login',
     element: <Login />,
-  }
+  },
+  {
+    path: '/cards',
+    element: <CardDB />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
