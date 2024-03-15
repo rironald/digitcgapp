@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 #navbar {
-    background-color: #157ffb;
-    max-width: 100%;
+  background-color: #157ffb;
+  max-width: 100%;
+}
+
+.account {
+  @apply py-1;
 }
