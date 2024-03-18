@@ -18,20 +18,34 @@ const Profile = () => {
       </div>
       <div className="w-full h-screen px-4 text-black">
         <div className="max-w-[1280px] bg-white mx-auto grid md:grid-cols-3 gap-8">
-          <div className=" mt-12 mx-auto p-16 grid grid-rows-3 grid-flow-col gap-1">
-            <img
-              className="size-25 row-span-3 rounded-full"
-              src={profile_pic}
-              alt="/"
-            />
-            <h1 className=" col-span-2 flex items-end text-center text-lg font-medium uppercase">
-              Ronald Rivera
-            </h1>
-            <div className="row-span-1 col-span-3 flex items-start justify-evenly md:w-[75%]">
-              <FaInstagramSquare size={20} />
-              <FaFacebookSquare size={20} />
-              <FaTwitterSquare size={20} />
-              <FaDiscord size={20} />
+          <div className="mx-auto lg:mx-0 grid grid-cols-3 gap-1 py-16">
+            <div className="col-span-3 md:col-span-1">
+              <img
+                className="mx-auto w-24 h-24 rounded-full"
+                src={profile_pic}
+                alt="/"
+              />
+            </div>
+            <div className="col-span-3 md:col-span-2">
+              <h1 className="flex items-end text-center text-lg font-medium uppercase">
+                Ronald Rivera
+              </h1>
+              <div className="col-span-3 flex items-start">
+                <ul className="flex flex-row items-center">
+                  <li className="px-1">
+                    <FaInstagramSquare size={20} />
+                  </li>
+                  <li className="px-1">
+                    <FaFacebookSquare size={20} />
+                  </li>
+                  <li className="px-1">
+                    <FaTwitterSquare size={20} />
+                  </li>
+                  <li className="px-1">
+                    <FaDiscord size={20} />
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -44,22 +58,47 @@ const Profile = () => {
             <h2 className="account">Settings</h2>
           </div>
           <div>
-            <div className="flex flex-col col-span-3">
+            <div className="flex flex-col">
               <h1 className="text-xl font-medium py-4">Account Information</h1>
-              <div className="py-2">
-                <p className="text-lg">First Name</p>
-                <p className="font-light">Ronald</p>
+              <div className="flex flex-col md:flex-row py-4 justify-between">
+                <div className="py-2">
+                  <p className="text-lg">First Name</p>
+                  <p className="font-light">Ronald</p>
+                </div>
+                <div className="py-2">
+                  <p className="text-lg">Last Name</p>
+                  <p className="font-light">Rivera</p>
+                </div>
               </div>
-              <div className="py-2">
-                <p className="text-lg">Last Name</p>
-                <p className="font-light">Rivera</p>
+              <div className="flex flex-col md:flex-row py-4 justify-between">
+                <div className="py-2">
+                  <p className="text-lg">Email</p>
+                  <p className="font-light">rironald3@gmail.com</p>
+                </div>
+                <div className="py-2">
+                  <p className="text-lg">Password</p>
+                  <p className="font-light">********</p>
+                </div>
+              </div>
+            </div>
+            <button className="editButton">Make Changes</button>
+            <div className="flex flex-col py-16">
+              <h1 className="text-xl font-medium py-4">Uploaded Decks</h1>
+              <div className="flex flex-col">
+                <div>
+                  <ul className="pb-4">
+                    <li className="py-1">Xros Heart</li>
+                    <li className="py-1">Hunters</li>
+                    <li className="py-1">Greyknightsmon</li>
+                    <li className="py-1">Bloomlord/Parasitemon</li>
+                    <li className="py-1">Red Hybrid</li>
+                  </ul>
+                  <button className="editButton">Edit Decks</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="max-w-[1280px] px-16 py-4 mx-auto grid md:grid-cols-3 gap-8"></div>
-      </div>
-      <div>
         <Footer />
       </div>
     </div>
